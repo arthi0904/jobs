@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login & Register</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h2 class="logo">Jobify</h2>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="jobs.html">Job Listings</a>
+        <a href="job-details.html">Job Details</a>
+        <a href="login.html">Login/Register</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container1">
+    <div id="loginBox">
+      <h2>Login</h2>
+      <div class="error" id="loginError"></div>
+      <input type="email" id="loginEmail" placeholder="Email" required>
+      <input type="password" id="loginPassword" placeholder="Password" required>
+      <button onclick="login()">Login</button>
+      <div class="toggle-text">Don't have an account? <a onclick="showRegister()">Register</a></div>
+    </div>
+
+    <div id="registerBox" class="hidden">
+      <h2>Register</h2>
+      <div class="error" id="registerError"></div>
+      <input type="text" id="fullname" placeholder="Full Name" required>
+      <input type="email" id="registerEmail" placeholder="Email" required>
+      <input type="password" id="registerPassword" placeholder="Password" required>
+      <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+      <button onclick="register()">Register</button>
+      <div class="toggle-text">Already have an account? <a onclick="showLogin()">Login</a></div>
+    </div>
+  </div>
+
+<script src="javascript/script.js"></script>
+</body>
+</html>

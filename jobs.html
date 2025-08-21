@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Portal - Home</title>
+  <link rel="stylesheet" href="css\style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h2 class="logo">Jobify</h2>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="jobs.html">Job Listings</a>
+        <a href="job-details.html">Job Details</a>
+        <a href="auth.html">Login/Register</a>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+  <h2 class="section-title">Browse by Category</h2>
+  <div class="categories">
+    <a href="jobs.html" class="category-card">IT & Software</a>
+    <a href="jobs.html?category=Marketing" class="category-card">Marketing</a>
+    <a href="jobs.html?category=Design" class="category-card">Design</a>
+    <a href="jobs.html?category=Finance" class="category-card">Finance</a>
+    <a href="jobs.html?category=Human%20Resources" class="category-card">Human Resources</a>
+    <a href="jobs.html?category=Education" class="category-card">Education</a>
+  </div>
+</div>
+
+<input type="text" id="search" placeholder="Search by location..." />
+
+<div class="job-container" id="jobContainer">
+  <div class="job-card">
+  <img src="images/zoho-original.webp" alt="ZOHO" />
+  
+  <div class="job-details">
+    <p><strong>Company:</strong> ZOHO</p>
+    <p><strong>Location:</strong> Chennai</p>
+  </div>
+
+  <div class="job-actions">
+    <a href="job-details.html" class="desc-btn">Description</a>
+    <button class="save-btn" onclick="saveJob(1)">Save</button>
+  </div>
+</div>
+
+<script src="javascript\script.js"></script>
+
+
+
+
+
+</body>
+</html>
